@@ -147,6 +147,42 @@ export async function resetPassword(email, code, newPassword) {
   return await response.json();
 }
 
+// Update authenticated user's phone number (sends verification SMS)
+export async function updatePhoneNumber(phoneNumber) {
+  const response = await fetch(`${API_URL}/api/users/me/phone`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${getToken()}`
+    },
+    body: JSON.stringify({ phoneNumber })
+  });
+
+  return await response.json();
+}
+
+// Resend phone verification SMS
+export async function resendPhoneVerification(phoneNumber) {
+  const response = await fetch(`${API_URL}/api/auth/resend-phone-verification`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ phoneNumber })
+  });
+
+  return await response.json();
+}
+
+// Verify phone OTP
+export async function verifyPhone(phoneNumber, code) {
+  const response = await fetch(`${API_URL}/api/auth/verify-phone`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ phoneNumber, code })
+  });
+
+  return await response.json();
+}
+
 // Logout user
 export function logout() {
   localStorage.removeItem('token');

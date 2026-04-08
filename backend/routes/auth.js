@@ -1,5 +1,6 @@
 import express from 'express';
-import { register, login, logout, submitAccountAppeal, resendVerificationOtp, verifyEmailOtp, requestPasswordReset, resetPasswordWithOtp } from '../controllers/AuthController.js';
+import { register, login, logout, submitAccountAppeal, resendVerificationOtp, verifyEmailOtp, requestPasswordReset, resetPasswordWithOtp, resendPhoneVerification, verifyPhoneOtp } from '../controllers/AuthController.js';
+import { rateLimitSmsSend, rateLimitSmsVerify } from '../middleware/rateLimit.js';
 import { rateLimitAuth } from '../middleware/rateLimit.js';
 import { validateRegistration } from '../middleware/validation.js';
 
@@ -20,6 +21,8 @@ router.post('/account-appeals', rateLimitAuth, submitAccountAppeal);
 // Email verification & password reset
 router.post('/verify-email', rateLimitAuth, verifyEmailOtp);
 router.post('/resend-verification', rateLimitAuth, resendVerificationOtp);
+router.post('/resend-phone-verification', rateLimitAuth, rateLimitSmsSend, resendPhoneVerification);
+router.post('/verify-phone', rateLimitAuth, rateLimitSmsVerify, verifyPhoneOtp);
 router.post('/request-password-reset', rateLimitAuth, requestPasswordReset);
 router.post('/reset-password', rateLimitAuth, resetPasswordWithOtp);
 

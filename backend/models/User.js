@@ -25,6 +25,18 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: null
   },
+  phoneNumber: {
+    type: String,
+    trim: true,
+    lowercase: false,
+    unique: true,
+    sparse: true,
+    default: null
+  },
+  phoneVerified: {
+    type: Boolean,
+    default: false
+  },
   bio: {
     type: String,
     trim: true,

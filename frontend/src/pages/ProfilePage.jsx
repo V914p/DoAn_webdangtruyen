@@ -37,6 +37,12 @@ export default function ProfilePage() {
     email: '',
     bio: ''
   });
+  const [phoneNumberInput, setPhoneNumberInput] = useState('');
+  const [phoneCodeInput, setPhoneCodeInput] = useState('');
+  const [phoneSending, setPhoneSending] = useState(false);
+  const [phoneVerifying, setPhoneVerifying] = useState(false);
+  const [phoneMessage, setPhoneMessage] = useState('');
+  const [phoneError, setPhoneError] = useState('');
   const likedIds = Array.isArray(authUser?.likes) ? authUser.likes.map((value) => String(value)) : [];
   const bookmarkedIds = Array.isArray(authUser?.bookmarks) ? authUser.bookmarks.map((value) => String(value)) : [];
   const profileCacheScope = getFrontendCacheScope(authUser?.id || authUser?._id);
@@ -92,6 +98,7 @@ export default function ProfilePage() {
         email: data.data.user.email || '',
         bio: data.data.user.bio || ''
       });
+      setPhoneNumberInput(data.data.user.phoneNumber || '');
       setError('');
     } catch (err) {
       setError(`Failed to load profile: ${err.message}`);
@@ -293,6 +300,92 @@ export default function ProfilePage() {
       setError('Failed to update profile');
     } finally {
       setSavingProfile(false);
+    }
+  };
+
+  const handleUpdatePhone = async (e) => {
+    e.preventDefault();
+    setPhoneError('');
+    setPhoneMessage('');
+    setPhoneSending(true);
+
+    try {
+      const token = getToken();
+      const response = await fetch(`${API_URL}/api/users/me/phone`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify({ phoneNumber: phoneNumberInput })
+      });
+
+      const data = await response.json();
+      if (!data.success) {
+        setPhoneError(data.error?.message || 'Failed to update phone');
+        return;
+      }
+
+      setProfile(data.data);
+      // update current user in localStorage
+      const current = getCurrentUser();
+      setCurrentUser({ ...(current || {}), ...data.data, id: data.data._id || current?.id });
+      setPhoneMessage('Verification code sent. Check your SMS.');
+    } catch (err) {
+      setPhoneError('Failed to update phone number');
+    } finally {
+      setPhoneSending(false);
+    }
+  };
+
+  const handleVerifyPhone = async (e) => {
+    e.preventDefault();
+    setPhoneError('');
+    setPhoneMessage('');
+    setPhoneVerifying(true);
+
+    try {
+      const response = await fetch(`${API_URL}/api/auth/verify-phone`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phoneNumber: phoneNumberInput, code: phoneCodeInput })
+      });
+
+      const data = await response.json();
+      if (!data.success) {
+        setPhoneError(data.error?.message || 'Invalid code');
+        return;
+      }
+
+      setPhoneMessage('Phone number verified');
+      // fetch updated profile to reflect phoneVerified
+      await fetchProfile();
+    } catch (err) {
+      setPhoneError('Failed to verify phone');
+    } finally {
+      setPhoneVerifying(false);
+    }
+  };
+
+  const handleResendPhone = async () => {
+    setPhoneError('');
+    setPhoneMessage('');
+    try {
+      const response = await fetch(`${API_URL}/api/auth/resend-phone-verification`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phoneNumber: phoneNumberInput })
+      });
+
+      const data = await response.json();
+      if (!data.success) {
+        setPhoneError(data.error?.message || 'Failed to resend code');
+        return;
+      }
+
+      setPhoneMessage('Verification code resent if number exists.');
+    } catch (err) {
+      setPhoneError('Failed to resend code');
     }
   };
 
@@ -502,6 +595,57 @@ export default function ProfilePage() {
                 maxLength={300}
                 placeholder="Tell people about yourself..."
               />
+            </div>
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-300">Phone number</label>
+              <div className="flex items-center gap-2">
+                <input
+                  type="text"
+                  value={phoneNumberInput}
+                  onChange={(event) => setPhoneNumberInput(event.target.value)}
+                  className="input-base"
+                  placeholder="+84123456789"
+                />
+                <button
+                  type="button"
+                  onClick={handleUpdatePhone}
+                  disabled={phoneSending}
+                  className="inline-flex items-center justify-center rounded-2xl bg-brand px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-light disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {phoneSending ? 'Sending...' : 'Send verification'}
+                </button>
+              </div>
+              {profile?.phoneVerified ? (
+                <p className="mt-2 text-xs text-green-400">Verified</p>
+              ) : (
+                <p className="mt-2 text-xs text-slate-400">Not verified</p>
+              )}
+            </div>
+
+            <div className="lg:col-span-2">
+              <label className="mb-2 block text-sm font-medium text-slate-300">Verification code</label>
+              <div className="flex items-center gap-2">
+                <input
+                  type="text"
+                  value={phoneCodeInput}
+                  onChange={(event) => setPhoneCodeInput(event.target.value)}
+                  className="input-base"
+                  placeholder="123456"
+                />
+                <button
+                  type="button"
+                  onClick={handleVerifyPhone}
+                  disabled={phoneVerifying}
+                  className="inline-flex items-center justify-center rounded-2xl bg-brand px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-light disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {phoneVerifying ? 'Verifying...' : 'Verify'}
+                </button>
+                <button type="button" onClick={handleResendPhone} className="text-sm text-slate-300 hover:text-white">
+                  Resend code
+                </button>
+              </div>
+              {phoneMessage ? <p className="mt-2 text-sm text-green-400">{phoneMessage}</p> : null}
+              {phoneError ? <p className="mt-2 text-sm text-rose-300">{phoneError}</p> : null}
             </div>
           </div>
         </form>

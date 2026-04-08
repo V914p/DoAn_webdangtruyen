@@ -2,6 +2,9 @@ import User from '../models/User.js';
 import Story from '../models/Story.js';
 import Artwork from '../models/Artwork.js';
 import Follow from '../models/Follow.js';
+import Phone from '../models/Phone.js';
+import { createOtpForUser } from '../services/otpService.js';
+import { sendSms } from '../services/smsService.js';
 import { CACHE_NAMESPACES, getOrSetNamespacedCache, invalidateCacheNamespaces } from '../services/cacheStore.js';
 import webSocketManager from '../websocket/WebSocketManager.js';
 import { buildSearchNameFields, escapeRegex, normalizeSearchText, similarityScore, tokenizeSearchText } from '../utils/search.js';
@@ -392,6 +395,50 @@ export async function updateProfile(req, res) {
         message: 'An unexpected error occurred'
       }
     });
+  }
+}
+
+// Update authenticated user's phone number and send verification OTP via SMS
+export async function updatePhoneNumber(req, res) {
+  try {
+    const { phoneNumber } = req.body;
+
+    if (!phoneNumber || !String(phoneNumber).trim()) {
+      return res.status(400).json({ success: false, error: { code: 'VALIDATION_ERROR', message: 'phoneNumber is required', field: 'phoneNumber' } });
+    }
+
+    const normalized = String(phoneNumber).replace(/[^+\d]/g, '');
+
+    // Check if phone is already used by another account
+    const existing = await User.findOne({ phoneNumber: normalized, _id: { $ne: req.user.userId } });
+    if (existing) {
+      return res.status(409).json({ success: false, error: { code: 'DUPLICATE_ERROR', message: 'Phone number already in use', field: 'phoneNumber' } });
+    }
+
+    // Save phone record
+    try {
+      await Phone.create({ user: req.user.userId, number: phoneNumber, normalized, verified: false });
+    } catch (e) {
+      // ignore duplicate phone history errors
+    }
+
+    const user = await User.findByIdAndUpdate(req.user.userId, { phoneNumber: normalized, phoneVerified: false }, { new: true }).select('-password');
+
+    // Create OTP and send via SMS
+    try {
+      const { code } = await createOtpForUser(req.user.userId, 'verify');
+      const message = `Your verification code is: ${code}. It expires in 15 minutes.`;
+      await sendSms({ to: normalized, body: message });
+    } catch (smsError) {
+      console.error('[user] Failed to send verification SMS:', smsError);
+    }
+
+    await invalidateCreatorCache();
+
+    return res.status(200).json({ success: true, message: 'Phone updated. Verification code sent.' , data: user });
+  } catch (error) {
+    console.error('Update phone error:', error);
+    return res.status(500).json({ success: false, error: { code: 'INTERNAL_ERROR', message: 'An unexpected error occurred' } });
   }
 }
 

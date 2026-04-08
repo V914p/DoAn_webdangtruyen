@@ -99,6 +99,11 @@ export const env = {
     smtpPass: readTrimmedEnv('SMTP_PASS'),
     fromAddress: readTrimmedEnv('EMAIL_FROM', 'no-reply@localhost')
   },
+  twilio: {
+    accountSid: readTrimmedEnv('TWILIO_ACCOUNT_SID'),
+    authToken: readTrimmedEnv('TWILIO_AUTH_TOKEN'),
+    fromNumber: readTrimmedEnv('TWILIO_FROM')
+  },
   cache: {
     enabled: parseBooleanEnv('CACHE_ENABLED', true),
     defaultTtlSeconds: parseIntegerEnv('CACHE_DEFAULT_TTL_SECONDS', 60, { min: 1 }),

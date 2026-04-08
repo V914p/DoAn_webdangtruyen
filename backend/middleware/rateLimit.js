@@ -109,3 +109,31 @@ export const rateLimitSearch = createRateLimit({
     }
   }
 });
+
+export const rateLimitSmsSend = createRateLimit({
+  namespace: 'sms-send',
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 5,
+  keyGenerator: (req) => req.ip || resolveRequestKey(req),
+  message: {
+    success: false,
+    error: {
+      code: 'RATE_LIMIT_EXCEEDED',
+      message: 'Too many SMS send requests. Please try again later.'
+    }
+  }
+});
+
+export const rateLimitSmsVerify = createRateLimit({
+  namespace: 'sms-verify',
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 10,
+  keyGenerator: (req) => req.ip || resolveRequestKey(req),
+  message: {
+    success: false,
+    error: {
+      code: 'RATE_LIMIT_EXCEEDED',
+      message: 'Too many verification attempts. Please try again later.'
+    }
+  }
+});

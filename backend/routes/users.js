@@ -1,5 +1,6 @@
 import express from 'express';
-import { getProfile, updateAvatar, followUser, unfollowUser, updateProfile, getFollowers, getFollowing, getReadingHistory, getBookmarkedContent, getLikedContent, getFavoriteTags, addFavoriteTag, removeFavoriteTag, searchCreators } from '../controllers/UserController.js';
+import { getProfile, updateAvatar, followUser, unfollowUser, updateProfile, getFollowers, getFollowing, getReadingHistory, getBookmarkedContent, getLikedContent, getFavoriteTags, addFavoriteTag, removeFavoriteTag, searchCreators, updatePhoneNumber } from '../controllers/UserController.js';
+import { rateLimitSmsSend } from '../middleware/rateLimit.js';
 import { authenticateToken, optionalAuth } from '../middleware/auth.js';
 import { cacheResponse } from '../middleware/cacheResponse.js';
 import { rateLimitRead, rateLimitSearch } from '../middleware/rateLimit.js';
@@ -40,6 +41,9 @@ router.put('/users/profile', authenticateToken, validateProfileUpdate, updatePro
 
 // PUT /api/users/avatar - Update avatar (with file upload support)
 router.put('/users/avatar', authenticateToken, upload.single('avatar'), updateAvatar);
+
+// PATCH /api/users/me/phone - Update phone number and send verification OTP
+router.patch('/users/me/phone', authenticateToken, rateLimitSmsSend, updatePhoneNumber);
 
 // GET /api/users/me/history - Get own reading history
 router.get('/users/me/history', authenticateToken, getReadingHistory);

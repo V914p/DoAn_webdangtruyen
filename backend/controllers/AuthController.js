@@ -2,7 +2,9 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 import { sendEmail } from '../services/emailService.js';
+import { sendSms } from '../services/smsService.js';
 import { createOtpForUser, verifyOtpForUser } from '../services/otpService.js';
+import Phone from '../models/Phone.js';
 import AccountAppeal from '../models/AccountAppeal.js';
 import webSocketManager from '../websocket/WebSocketManager.js';
 import { clearExpiredPostingRestriction, serializePostingRestriction } from '../utils/moderation.js';
@@ -129,6 +131,75 @@ export async function resendVerificationOtp(req, res) {
     return res.status(200).json({ success: true, message: 'Verification code sent if the email exists.' });
   } catch (error) {
     console.error('resendVerificationOtp error:', error);
+    return res.status(500).json({ success: false, error: { code: 'INTERNAL_ERROR', message: 'An unexpected error occurred' } });
+  }
+}
+
+// Resend phone verification OTP (by phone number)
+export async function resendPhoneVerification(req, res) {
+  try {
+    const { phoneNumber } = req.body;
+    if (!phoneNumber) {
+      return res.status(400).json({ success: false, error: { code: 'VALIDATION_ERROR', message: 'phoneNumber is required', field: 'phoneNumber' } });
+    }
+
+    const normalized = String(phoneNumber).replace(/[^+\d]/g, '');
+    const user = await User.findOne({ phoneNumber: normalized });
+
+    if (!user) {
+      // Don't reveal existence
+      return res.status(200).json({ success: true, message: 'If an account exists, a verification code was sent.' });
+    }
+
+    const { code } = await createOtpForUser(user._id, 'verify');
+    const message = `Your verification code is: ${code}. It expires in 15 minutes.`;
+
+    try {
+      await sendSms({ to: normalized, body: message });
+    } catch (smsError) {
+      console.error('[auth] Failed to send verification SMS:', smsError);
+    }
+
+    return res.status(200).json({ success: true, message: 'Verification code sent if the phone exists.' });
+  } catch (error) {
+    console.error('resendPhoneVerification error:', error);
+    return res.status(500).json({ success: false, error: { code: 'INTERNAL_ERROR', message: 'An unexpected error occurred' } });
+  }
+}
+
+// Verify phone OTP
+export async function verifyPhoneOtp(req, res) {
+  try {
+    const { phoneNumber, code } = req.body;
+    if (!phoneNumber || !code) {
+      return res.status(400).json({ success: false, error: { code: 'VALIDATION_ERROR', message: 'phoneNumber and code are required' } });
+    }
+
+    const normalized = String(phoneNumber).replace(/[^+\d]/g, '');
+    const user = await User.findOne({ phoneNumber: normalized });
+
+    if (!user) {
+      return res.status(400).json({ success: false, error: { code: 'INVALID_REQUEST', message: 'Invalid phone number or code' } });
+    }
+
+    const ok = await verifyOtpForUser(user._id, 'verify', code);
+    if (!ok) {
+      return res.status(400).json({ success: false, error: { code: 'INVALID_CODE', message: 'Invalid or expired verification code' } });
+    }
+
+    user.phoneVerified = true;
+    await user.save();
+
+    // mark phone history as verified
+    try {
+      await Phone.updateMany({ user: user._id, normalized }, { $set: { verified: true } });
+    } catch (e) {
+      // ignore
+    }
+
+    return res.status(200).json({ success: true, message: 'Phone verified successfully' });
+  } catch (error) {
+    console.error('verifyPhoneOtp error:', error);
     return res.status(500).json({ success: false, error: { code: 'INTERNAL_ERROR', message: 'An unexpected error occurred' } });
   }
 }
