@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "69d3247bdaa808edbf6c78c1"
+  },
+  "reporter": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "contentId": {
+    "$oid": "69cd1768be1808ec9561b568"
+  },
+  "contentType": "Story",
+  "reason": "copyright-violation: copy bai cua toi",
+  "createdAt": {
+    "$date": "2026-04-06T03:11:55.402Z"
+  },
+  "__v": 0
+}]

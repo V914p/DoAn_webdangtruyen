@@ -1,0 +1,326 @@
+[{
+  "_id": {
+    "$oid": "69cd1655be1808ec9561b414"
+  },
+  "recipient": {
+    "$oid": "69cb7399b6a8ad177acac812"
+  },
+  "type": "rejection",
+  "from": {
+    "$oid": "69cb573e0b2fe20d07487e8f"
+  },
+  "contentId": {
+    "$oid": "69cd134c6758976dad7d7bb6"
+  },
+  "contentType": "Artwork",
+  "message": "Your artwork \"Ngay nang qua\" was removed after report review. Reason: ban ngay. You cannot publish new posts until 4/4/2026, 7:57:57 PM.",
+  "read": true,
+  "createdAt": {
+    "$date": "2026-04-01T12:57:57.833Z"
+  },
+  "__v": 0,
+  "commentDeleted": false,
+  "commentPreview": "",
+  "contentDeleted": true,
+  "contentTitle": "Ngay nang qua"
+},
+{
+  "_id": {
+    "$oid": "69cd1888be1808ec9561b6ce"
+  },
+  "recipient": {
+    "$oid": "69cd1702be1808ec9561b4dd"
+  },
+  "type": "follow",
+  "from": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "contentId": null,
+  "contentType": null,
+  "message": "Someone started following you",
+  "read": true,
+  "createdAt": {
+    "$date": "2026-04-01T13:07:20.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69cd188abe1808ec9561b6e6"
+  },
+  "recipient": {
+    "$oid": "69cd17cfbe1808ec9561b5db"
+  },
+  "type": "follow",
+  "from": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "contentId": null,
+  "contentType": null,
+  "message": "Someone started following you",
+  "read": false,
+  "createdAt": {
+    "$date": "2026-04-01T13:07:22.196Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69cd3cdfc9805bb79a9fc51e"
+  },
+  "recipient": {
+    "$oid": "69cd17cfbe1808ec9561b5db"
+  },
+  "type": "rejection",
+  "from": {
+    "$oid": "69cb573e0b2fe20d07487e8f"
+  },
+  "contentId": {
+    "$oid": "69cd183cbe1808ec9561b60a"
+  },
+  "contentType": "Artwork",
+  "message": "Your artwork \"Chào mọi người buổi tối\" was removed after report review. Reason: m gay nen bi ban. You cannot publish new posts until 4/4/2026, 10:42:23 PM.",
+  "read": true,
+  "createdAt": {
+    "$date": "2026-04-01T15:42:23.995Z"
+  },
+  "__v": 0,
+  "commentDeleted": false,
+  "commentPreview": "",
+  "contentDeleted": true,
+  "contentTitle": "Chào mọi người buổi tối"
+},
+{
+  "_id": {
+    "$oid": "69cd46ccc9805bb79a9fc82f"
+  },
+  "recipient": {
+    "$oid": "69cd17cfbe1808ec9561b5db"
+  },
+  "type": "approval",
+  "from": {
+    "$oid": "69cb573e0b2fe20d07487e8f"
+  },
+  "contentId": null,
+  "contentType": null,
+  "message": "Your posting restriction has been lifted by the admin team.",
+  "read": false,
+  "createdAt": {
+    "$date": "2026-04-01T16:24:44.651Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69cd46d2c9805bb79a9fc876"
+  },
+  "recipient": {
+    "$oid": "69cb7399b6a8ad177acac812"
+  },
+  "type": "approval",
+  "from": {
+    "$oid": "69cb573e0b2fe20d07487e8f"
+  },
+  "contentId": null,
+  "contentType": null,
+  "message": "Your posting restriction has been lifted by the admin team.",
+  "read": true,
+  "createdAt": {
+    "$date": "2026-04-01T16:24:50.175Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69cd5398c9805bb79a9fd1cf"
+  },
+  "recipient": {
+    "$oid": "69cb7399b6a8ad177acac812"
+  },
+  "type": "comment",
+  "from": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "contentId": {
+    "$oid": "69cd48a3c9805bb79a9fc937"
+  },
+  "contentType": "Artwork",
+  "message": "Someone commented on your artwork: \"Ngày nay tận thế sẽ đến\"",
+  "read": true,
+  "createdAt": {
+    "$date": "2026-04-01T17:19:20.533Z"
+  },
+  "__v": 0,
+  "commentDeleted": false,
+  "commentId": {
+    "$oid": "69cd5398c9805bb79a9fd1cc"
+  },
+  "commentPreview": "nhin hay phet",
+  "contentDeleted": false,
+  "contentTitle": "Ngày nay tận thế sẽ đến"
+},
+{
+  "_id": {
+    "$oid": "69cd553fc9805bb79a9fd298"
+  },
+  "recipient": {
+    "$oid": "69cd1702be1808ec9561b4dd"
+  },
+  "type": "comment",
+  "from": {
+    "$oid": "69cb7399b6a8ad177acac812"
+  },
+  "contentId": {
+    "$oid": "69cd1768be1808ec9561b568"
+  },
+  "contentType": "Story",
+  "message": "Someone commented on your story: \"Long Story\"",
+  "read": true,
+  "createdAt": {
+    "$date": "2026-04-01T17:26:23.164Z"
+  },
+  "__v": 0,
+  "commentDeleted": false,
+  "commentId": {
+    "$oid": "69cd553fc9805bb79a9fd295"
+  },
+  "commentPreview": "truyen nhu c",
+  "contentDeleted": false,
+  "contentTitle": "Long Story"
+},
+{
+  "_id": {
+    "$oid": "69d3332ed407e2fafd617bbc"
+  },
+  "recipient": {
+    "$oid": "69cd1702be1808ec9561b4dd"
+  },
+  "type": "follow",
+  "from": {
+    "$oid": "69cb7399b6a8ad177acac812"
+  },
+  "contentId": null,
+  "contentType": null,
+  "message": "Someone started following you",
+  "read": true,
+  "createdAt": {
+    "$date": "2026-04-06T04:14:38.370Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d348125fd4e111c2bc74f0"
+  },
+  "recipient": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "type": "comment",
+  "from": {
+    "$oid": "69d347f85fd4e111c2bc74c3"
+  },
+  "contentId": {
+    "$oid": "69d3246adaa808edbf6c788b"
+  },
+  "contentType": "Story",
+  "message": "Someone commented on your story: \"Ngay kiem tra\"",
+  "read": false,
+  "createdAt": {
+    "$date": "2026-04-06T05:43:46.626Z"
+  },
+  "__v": 0,
+  "commentDeleted": false,
+  "commentId": {
+    "$oid": "69d348485fd4e111c2bc74f8"
+  },
+  "commentPreview": "sync-check-reconnect-20260406-0544",
+  "contentDeleted": false,
+  "contentTitle": "Ngay kiem tra"
+},
+{
+  "_id": {
+    "$oid": "69d348485fd4e111c2bc74fb"
+  },
+  "recipient": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "type": "comment",
+  "from": {
+    "$oid": "69d347f85fd4e111c2bc74c3"
+  },
+  "contentId": {
+    "$oid": "69d3246adaa808edbf6c788b"
+  },
+  "contentType": "Story",
+  "message": "Someone commented on your story: \"Ngay kiem tra\"",
+  "read": false,
+  "createdAt": {
+    "$date": "2026-04-06T05:44:40.339Z"
+  },
+  "__v": 0,
+  "commentDeleted": false,
+  "commentId": {
+    "$oid": "69d348485fd4e111c2bc74f8"
+  },
+  "commentPreview": "sync-check-reconnect-20260406-0544",
+  "contentDeleted": false,
+  "contentTitle": "Ngay kiem tra"
+},
+{
+  "_id": {
+    "$oid": "69d3486f5fd4e111c2bc7505"
+  },
+  "recipient": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "type": "comment",
+  "from": {
+    "$oid": "69d347f85fd4e111c2bc74c3"
+  },
+  "contentId": {
+    "$oid": "69d3246adaa808edbf6c788b"
+  },
+  "contentType": "Story",
+  "message": "Someone commented on your story: \"Ngay kiem tra\"",
+  "read": false,
+  "createdAt": {
+    "$date": "2026-04-06T05:45:19.673Z"
+  },
+  "__v": 0,
+  "commentDeleted": false,
+  "commentId": {
+    "$oid": "69d3486f5fd4e111c2bc7502"
+  },
+  "commentPreview": "sync-check-offline-reconnect-20260406-0545",
+  "contentDeleted": false,
+  "contentTitle": "Ngay kiem tra"
+},
+{
+  "_id": {
+    "$oid": "69d348ba5fd4e111c2bc754c"
+  },
+  "recipient": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "type": "comment",
+  "from": {
+    "$oid": "69d347f85fd4e111c2bc74c3"
+  },
+  "contentId": {
+    "$oid": "69d3246adaa808edbf6c788b"
+  },
+  "contentType": "Story",
+  "message": "Someone commented on your story: \"Ngay kiem tra\"",
+  "read": false,
+  "createdAt": {
+    "$date": "2026-04-06T05:46:34.021Z"
+  },
+  "__v": 0,
+  "commentDeleted": false,
+  "commentId": {
+    "$oid": "69d348ba5fd4e111c2bc7549"
+  },
+  "commentPreview": "sync-check-offline-online-fix-20260406-0546",
+  "contentDeleted": false,
+  "contentTitle": "Ngay kiem tra"
+}]

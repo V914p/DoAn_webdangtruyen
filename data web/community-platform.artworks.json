@@ -1,0 +1,512 @@
+[{
+  "_id": {
+    "$oid": "69cd0174b8efa7e9bebcfdac"
+  },
+  "title": "Nang dep tuoi mat",
+  "description": "Chuc moi nguoi co 1 ngay tot lanh",
+  "images": [
+    "/uploads/1775042932261-512635458.jpg"
+  ],
+  "tags": [
+    "newday"
+  ],
+  "author": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "status": "approved",
+  "likes": 2,
+  "bookmarks": 1,
+  "views": 27,
+  "createdAt": {
+    "$date": "2026-04-01T11:28:52.274Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-06T05:20:41.564Z"
+  },
+  "__v": 0,
+  "searchDescription": "chuc moi nguoi co 1 ngay tot lanh",
+  "searchTitle": "nang dep tuoi mat",
+  "searchTokens": [
+    "nang",
+    "dep",
+    "tuoi",
+    "mat",
+    "chuc",
+    "moi",
+    "nguoi",
+    "co",
+    "1",
+    "ngay",
+    "tot",
+    "lanh"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69cd134c6758976dad7d7bb6"
+  },
+  "title": "Ngay nang qua",
+  "description": "Nắng như gì 40 độ",
+  "images": [
+    "/uploads/1775047534741-785686185.webp"
+  ],
+  "tags": [
+    "hot"
+  ],
+  "author": {
+    "$oid": "69cb7399b6a8ad177acac812"
+  },
+  "status": "deleted",
+  "likes": 0,
+  "bookmarks": 0,
+  "views": 8,
+  "createdAt": {
+    "$date": "2026-04-01T12:45:00.927Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-01T14:16:04.548Z"
+  },
+  "__v": 1,
+  "searchDescription": "nang nhu gi 40 đo",
+  "searchTitle": "ngay nang qua",
+  "searchTokens": [
+    "ngay",
+    "nang",
+    "qua",
+    "nhu",
+    "gi",
+    "40",
+    "đo"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69cd183cbe1808ec9561b60a"
+  },
+  "title": "Chào mọi người buổi tối",
+  "description": "Tối nay thế chó nào nóng vl 40 độ",
+  "images": [
+    "/uploads/1775048764979-335554182.jpg",
+    "/uploads/1775048764980-924588662.jpg"
+  ],
+  "tags": [
+    "newday"
+  ],
+  "author": {
+    "$oid": "69cd17cfbe1808ec9561b5db"
+  },
+  "status": "deleted",
+  "likes": 1,
+  "bookmarks": 1,
+  "views": 12,
+  "createdAt": {
+    "$date": "2026-04-01T13:06:04.995Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-01T15:42:23.982Z"
+  },
+  "__v": 0,
+  "searchDescription": "toi nay the cho nao nong vl 40 đo",
+  "searchTitle": "chao moi nguoi buoi toi",
+  "searchTokens": [
+    "chao",
+    "moi",
+    "nguoi",
+    "buoi",
+    "toi",
+    "nay",
+    "the",
+    "cho",
+    "nao",
+    "nong",
+    "vl",
+    "40",
+    "đo"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69cd48a3c9805bb79a9fc937"
+  },
+  "title": "Ngày nay tận thế sẽ đến",
+  "description": "trốn đi mọi người",
+  "searchTitle": "ngay nay tan the se đen",
+  "searchDescription": "tron đi moi nguoi",
+  "searchTokens": [
+    "ngay",
+    "nay",
+    "tan",
+    "the",
+    "se",
+    "đen",
+    "tron",
+    "đi",
+    "moi",
+    "nguoi"
+  ],
+  "images": [
+    "/uploads/1775061155840-713234922.jpg",
+    "/uploads/1775061155841-979262451.jpg",
+    "/uploads/1775061155842-324795618.webp",
+    "/uploads/1775552792575-157477232.jpg",
+    "/uploads/1775552792577-850368397.png",
+    "/uploads/1775552792585-838104624.png"
+  ],
+  "tags": [
+    "tan",
+    "the"
+  ],
+  "author": {
+    "$oid": "69cb7399b6a8ad177acac812"
+  },
+  "status": "approved",
+  "likes": 0,
+  "bookmarks": 0,
+  "views": 58,
+  "createdAt": {
+    "$date": "2026-04-01T16:32:35.885Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:23:07.962Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a46c"
+  },
+  "title": "Poster sac cam cho dem nhac nho",
+  "description": "Bo cuc theo huong poster su kien, nhan mau cam va xanh dam.",
+  "searchTitle": "poster sac cam cho dem nhac nho",
+  "searchDescription": "bo cuc theo huong poster su kien nhan mau cam va xanh dam",
+  "searchTokens": [
+    "poster",
+    "sac",
+    "cam",
+    "cho",
+    "dem",
+    "nhac",
+    "nho",
+    "bo",
+    "cuc",
+    "theo",
+    "huong",
+    "su",
+    "kien",
+    "nhan",
+    "mau",
+    "va",
+    "xanh",
+    "dam"
+  ],
+  "images": [],
+  "tags": [
+    "posterdesign",
+    "warmtone",
+    "musicnight"
+  ],
+  "author": {
+    "$oid": "69d4d0388b0c39217700a43f"
+  },
+  "status": "approved",
+  "likes": 4,
+  "bookmarks": 1,
+  "views": 174,
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.713Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a46f"
+  },
+  "title": "Phac thao nhan vat trong quan ca phe",
+  "description": "Mot mau phac thao nhanh tap trung vao cam xuc va dang ngoi.",
+  "searchTitle": "phac thao nhan vat trong quan ca phe",
+  "searchDescription": "mot mau phac thao nhanh tap trung vao cam xuc va dang ngoi",
+  "searchTokens": [
+    "phac",
+    "thao",
+    "nhan",
+    "vat",
+    "trong",
+    "quan",
+    "ca",
+    "phe",
+    "mot",
+    "mau",
+    "nhanh",
+    "tap",
+    "trung",
+    "vao",
+    "cam",
+    "xuc",
+    "va",
+    "dang",
+    "ngoi"
+  ],
+  "images": [],
+  "tags": [
+    "charactersketch",
+    "cafe",
+    "lineart"
+  ],
+  "author": {
+    "$oid": "69d4d0388b0c39217700a442"
+  },
+  "status": "approved",
+  "likes": 5,
+  "bookmarks": 2,
+  "views": 126,
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.719Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a472"
+  },
+  "title": "Mau minh hoa cho bai viet du lich",
+  "description": "Concept tranh minh hoa voi bo mau thoang va sach.",
+  "searchTitle": "mau minh hoa cho bai viet du lich",
+  "searchDescription": "concept tranh minh hoa voi bo mau thoang va sach",
+  "searchTokens": [
+    "mau",
+    "minh",
+    "hoa",
+    "cho",
+    "bai",
+    "viet",
+    "du",
+    "lich",
+    "concept",
+    "tranh",
+    "voi",
+    "bo",
+    "thoang",
+    "va",
+    "sach"
+  ],
+  "images": [],
+  "tags": [
+    "illustration",
+    "travel",
+    "editorial"
+  ],
+  "author": {
+    "$oid": "69d4d0388b0c39217700a445"
+  },
+  "status": "approved",
+  "likes": 6,
+  "bookmarks": 3,
+  "views": 149,
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.725Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a475"
+  },
+  "title": "Y tuong bia sach cho tap truyen ngan",
+  "description": "Tap trung vao typography lon va diem nhan hinh khoi.",
+  "searchTitle": "y tuong bia sach cho tap truyen ngan",
+  "searchDescription": "tap trung vao typography lon va diem nhan hinh khoi",
+  "searchTokens": [
+    "y",
+    "tuong",
+    "bia",
+    "sach",
+    "cho",
+    "tap",
+    "truyen",
+    "ngan",
+    "trung",
+    "vao",
+    "typography",
+    "lon",
+    "va",
+    "diem",
+    "nhan",
+    "hinh",
+    "khoi"
+  ],
+  "images": [],
+  "tags": [
+    "bookcover",
+    "graphicdesign",
+    "typography"
+  ],
+  "author": {
+    "$oid": "69d4d0388b0c39217700a448"
+  },
+  "status": "approved",
+  "likes": 7,
+  "bookmarks": 4,
+  "views": 111,
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.728Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a478"
+  },
+  "title": "Bo 4 thumbnail concept cho bai dang lon",
+  "description": "Huong di nhieu khung anh de chot layout cuoi.",
+  "searchTitle": "bo 4 thumbnail concept cho bai dang lon",
+  "searchDescription": "huong di nhieu khung anh de chot layout cuoi",
+  "searchTokens": [
+    "bo",
+    "4",
+    "thumbnail",
+    "concept",
+    "cho",
+    "bai",
+    "dang",
+    "lon",
+    "huong",
+    "di",
+    "nhieu",
+    "khung",
+    "anh",
+    "de",
+    "chot",
+    "layout",
+    "cuoi"
+  ],
+  "images": [],
+  "tags": [
+    "thumbnail",
+    "conceptset",
+    "visualdirection"
+  ],
+  "author": {
+    "$oid": "69d4d0388b0c39217700a44b"
+  },
+  "status": "approved",
+  "likes": 2,
+  "bookmarks": 1,
+  "views": 187,
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.732Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a47b"
+  },
+  "title": "Khung canh ven song luc chieu muon",
+  "description": "Study anh sang va gam mau tron tu xanh sang tim.",
+  "searchTitle": "khung canh ven song luc chieu muon",
+  "searchDescription": "study anh sang va gam mau tron tu xanh sang tim",
+  "searchTokens": [
+    "khung",
+    "canh",
+    "ven",
+    "song",
+    "luc",
+    "chieu",
+    "muon",
+    "study",
+    "anh",
+    "sang",
+    "va",
+    "gam",
+    "mau",
+    "tron",
+    "tu",
+    "xanh",
+    "tim"
+  ],
+  "images": [],
+  "tags": [
+    "landscape",
+    "lightingstudy",
+    "riverside"
+  ],
+  "author": {
+    "$oid": "69d4d0388b0c39217700a44e"
+  },
+  "status": "approved",
+  "likes": 3,
+  "bookmarks": 2,
+  "views": 138,
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.734Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a47e"
+  },
+  "title": "Trang moodboard cho du an ca nhan",
+  "description": "Tong hop mau, texture va huong hinh anh de theo doi project.",
+  "searchTitle": "trang moodboard cho du an ca nhan",
+  "searchDescription": "tong hop mau texture va huong hinh anh de theo doi project",
+  "searchTokens": [
+    "trang",
+    "moodboard",
+    "cho",
+    "du",
+    "an",
+    "ca",
+    "nhan",
+    "tong",
+    "hop",
+    "mau",
+    "texture",
+    "va",
+    "huong",
+    "hinh",
+    "anh",
+    "de",
+    "theo",
+    "doi",
+    "project"
+  ],
+  "images": [],
+  "tags": [
+    "moodboard",
+    "projectplanning",
+    "artdirection"
+  ],
+  "author": {
+    "$oid": "69d4d0388b0c39217700a451"
+  },
+  "status": "approved",
+  "likes": 4,
+  "bookmarks": 3,
+  "views": 117,
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.738Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.182Z"
+  },
+  "__v": 0
+}]

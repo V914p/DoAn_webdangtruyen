@@ -1,0 +1,1295 @@
+[{
+  "_id": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "username": "Duckk",
+  "email": "nguyenthanhducpro12@gmail.com",
+  "password": "$2b$10$wKJSEtvGSCByLYifI/z0HOLYsjRT6zkkdF0nIVPkqzgRySv1b4BAy",
+  "avatar": "/uploads/1774928798458-984554980.png",
+  "role": "user",
+  "likes": [],
+  "bookmarks": [],
+  "createdAt": {
+    "$date": "2026-03-31T03:12:26.918Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-06T05:21:20.778Z"
+  },
+  "__v": 5,
+  "readingHistory": [
+    {
+      "contentId": {
+        "$oid": "69d3246adaa808edbf6c788b"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-06T05:21:20.778Z"
+      },
+      "_id": {
+        "$oid": "69d342d0a061721f920fcf38"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd0174b8efa7e9bebcfdac"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-06T05:20:41.570Z"
+      },
+      "_id": {
+        "$oid": "69d342a9a061721f920fce68"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd1768be1808ec9561b568"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-06T03:11:44.137Z"
+      },
+      "_id": {
+        "$oid": "69d32470daa808edbf6c78b5"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd48a3c9805bb79a9fc937"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T17:24:10.694Z"
+      },
+      "_id": {
+        "$oid": "69cd54bac9805bb79a9fd238"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd183cbe1808ec9561b60a"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T15:19:56.583Z"
+      },
+      "_id": {
+        "$oid": "69cd379cc9805bb79a9fc2d6"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd134c6758976dad7d7bb6"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T12:56:40.782Z"
+      },
+      "_id": {
+        "$oid": "69cd1608be1808ec9561b386"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb83a05a806f4f46412060"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-01T08:34:42.086Z"
+      },
+      "_id": {
+        "$oid": "69ccd8a2d621e071ec41fdde"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb4c10be0621c9b838cba5"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T06:51:07.832Z"
+      },
+      "_id": {
+        "$oid": "69ccc05b209476bba101ebc2"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb3c13ce2544a3075038e6"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-03-31T08:44:34.257Z"
+      },
+      "_id": {
+        "$oid": "69cb89725a806f4f46412417"
+      }
+    }
+  ],
+  "accountStatus": "active",
+  "bio": "",
+  "pendingLoginNoticeMessage": "",
+  "pendingLoginNoticeTitle": "",
+  "permanentBanReason": "",
+  "postingRestrictionReason": "",
+  "lastModeratedAt": {
+    "$date": "2026-04-01T16:24:49.285Z"
+  },
+  "postingRestrictedUntil": null,
+  "postingRestrictionSource": null,
+  "pendingLoginNoticeType": null,
+  "permanentlyBannedAt": null,
+  "searchName": "duckk",
+  "searchTokens": [
+    "duckk"
+  ],
+  "isVerified": false
+},
+{
+  "_id": {
+    "$oid": "69cb573e0b2fe20d07487e8f"
+  },
+  "username": "Admin",
+  "email": "admin@example.com",
+  "password": "$2b$10$2k1SO9ArvDyeVtDvlZwQ5.13hb8rx2N/.kBfSN7y.NEKe03JCddMC",
+  "avatar": null,
+  "bio": "",
+  "role": "admin",
+  "likes": [],
+  "bookmarks": [],
+  "readingHistory": [
+    {
+      "contentId": {
+        "$oid": "69cd48a3c9805bb79a9fc937"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-07T09:05:18.916Z"
+      },
+      "_id": {
+        "$oid": "69d4c8cea0b60ee6a3d5ad0e"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69d3492b5fd4e111c2bc7554"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-07T08:30:03.903Z"
+      },
+      "_id": {
+        "$oid": "69d4c08b6ec3c43424b122c1"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69d3246adaa808edbf6c788b"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-07T07:25:36.065Z"
+      },
+      "_id": {
+        "$oid": "69d4b170c29fa71236f10238"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd1768be1808ec9561b568"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-07T06:29:50.241Z"
+      },
+      "_id": {
+        "$oid": "69d4a45ec29fa71236f0ffe7"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd183cbe1808ec9561b60a"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T15:42:04.121Z"
+      },
+      "_id": {
+        "$oid": "69cd3cccc9805bb79a9fc4c5"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb83a05a806f4f46412060"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-01T12:43:09.972Z"
+      },
+      "_id": {
+        "$oid": "69cd12dd24654b67726e0a95"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb4c10be0621c9b838cba5"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T09:18:49.825Z"
+      },
+      "_id": {
+        "$oid": "69cce2f90a2c50896b5ddb37"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb3c13ce2544a3075038e6"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-03-31T08:46:01.392Z"
+      },
+      "_id": {
+        "$oid": "69cb89c95a806f4f4641252e"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb3ca6ce2544a307503909"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-03-31T08:13:51.399Z"
+      },
+      "_id": {
+        "$oid": "69cb823f5a806f4f46411eae"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb4c10be0621c9b838cba7"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-03-31T07:09:53.112Z"
+      },
+      "_id": {
+        "$oid": "69cb7341b6a8ad177acac7e7"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb4bf1be0621c9b838cb5d"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-03-31T05:23:48.743Z"
+      },
+      "_id": {
+        "$oid": "69cb5a640b2fe20d074881c6"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-03-31T05:10:22.742Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:05:18.916Z"
+  },
+  "__v": 2,
+  "searchName": "",
+  "searchTokens": [],
+  "accountStatus": "active",
+  "favoriteTags": [],
+  "isVerified": false,
+  "pendingLoginNoticeMessage": "",
+  "pendingLoginNoticeTitle": "",
+  "permanentBanReason": "",
+  "postingRestrictionReason": ""
+},
+{
+  "_id": {
+    "$oid": "69cb7399b6a8ad177acac812"
+  },
+  "username": "Loc",
+  "email": "loc@gmail.com",
+  "password": "$2b$10$00yBdE0eaZ4ajcSIM0nwSeWEXGfgHKbPHHH6Gq2pPE.BTyk1.uIRa",
+  "avatar": null,
+  "bio": "",
+  "role": "user",
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": {
+    "$date": "2026-04-01T16:24:50.173Z"
+  },
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69cd0174b8efa7e9bebcfdac"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69cd0174b8efa7e9bebcfdac"
+    }
+  ],
+  "readingHistory": [
+    {
+      "contentId": {
+        "$oid": "69cd48a3c9805bb79a9fc937"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-07T09:23:07.980Z"
+      },
+      "_id": {
+        "$oid": "69d4ccfb9b955e77afd6087a"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd1768be1808ec9561b568"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-01T17:26:17.135Z"
+      },
+      "_id": {
+        "$oid": "69cd5539c9805bb79a9fd28d"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd0174b8efa7e9bebcfdac"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T16:56:16.331Z"
+      },
+      "_id": {
+        "$oid": "69cd4e30c9805bb79a9fca61"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd134c6758976dad7d7bb6"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T12:45:34.848Z"
+      },
+      "_id": {
+        "$oid": "69cd136e6758976dad7d7bfe"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cb3ca6ce2544a307503909"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-03-31T08:11:39.914Z"
+      },
+      "_id": {
+        "$oid": "69cb81bb5a806f4f46411de8"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-03-31T07:11:21.907Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:23:07.980Z"
+  },
+  "__v": 6,
+  "searchName": "loc",
+  "searchTokens": [
+    "loc"
+  ],
+  "isVerified": false
+},
+{
+  "_id": {
+    "$oid": "69cd1702be1808ec9561b4dd"
+  },
+  "username": "ManhGay",
+  "email": "manh@gmail.com",
+  "password": "$2b$10$V8YxYhaCHhu9w./tu11eLO763mfO3Bi7PeQOOuO5lJy94aM8o05NG",
+  "avatar": null,
+  "bio": "",
+  "role": "user",
+  "isVerified": false,
+  "searchName": "manhgay",
+  "searchTokens": [
+    "manhgay"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69cd0174b8efa7e9bebcfdac"
+    }
+  ],
+  "bookmarks": [],
+  "readingHistory": [
+    {
+      "contentId": {
+        "$oid": "69cd48a3c9805bb79a9fc937"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-06T05:18:10.913Z"
+      },
+      "_id": {
+        "$oid": "69d3421279c95bdb422730a5"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd1768be1808ec9561b568"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-01T17:26:39.697Z"
+      },
+      "_id": {
+        "$oid": "69cd554fc9805bb79a9fd2e4"
+      }
+    },
+    {
+      "contentId": {
+        "$oid": "69cd0174b8efa7e9bebcfdac"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T16:56:41.525Z"
+      },
+      "_id": {
+        "$oid": "69cd4e49c9805bb79a9fcadb"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-01T13:00:50.846Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-06T05:18:10.913Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69cd17cfbe1808ec9561b5db"
+  },
+  "username": "VuEm",
+  "email": "vu@gmail.com",
+  "password": "$2b$10$f1sd8watxz472WQ1npuFUu0ZsTS4CGg0RoSDBZ2n0qWuKgSw//Aza",
+  "avatar": null,
+  "bio": "",
+  "role": "user",
+  "isVerified": false,
+  "searchName": "vuem",
+  "searchTokens": [
+    "vuem"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": {
+    "$date": "2026-04-01T16:24:44.648Z"
+  },
+  "pendingLoginNoticeType": "success",
+  "pendingLoginNoticeTitle": "Account restored",
+  "pendingLoginNoticeMessage": "Your account appeal was approved. Your access has been restored and you can use the platform again.",
+  "likes": [],
+  "bookmarks": [],
+  "readingHistory": [
+    {
+      "contentId": {
+        "$oid": "69cd183cbe1808ec9561b60a"
+      },
+      "contentType": "Artwork",
+      "readAt": {
+        "$date": "2026-04-01T13:06:07.557Z"
+      },
+      "_id": {
+        "$oid": "69cd183fbe1808ec9561b61f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-01T13:04:15.371Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-01T16:24:44.649Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d347f85fd4e111c2bc74c3"
+  },
+  "username": "flowcheck0601i",
+  "email": "flowcheck0601@example.com",
+  "password": "$2b$10$KKp3D0VO3PiSyu4K2xiV3eQsz1cAd.t.K3GmfOn.JErorlwewMfjq",
+  "avatar": null,
+  "bio": "",
+  "role": "user",
+  "isVerified": false,
+  "searchName": "flowcheck0601i",
+  "searchTokens": [
+    "flowcheck0601i"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [],
+  "bookmarks": [],
+  "readingHistory": [
+    {
+      "contentId": {
+        "$oid": "69d3246adaa808edbf6c788b"
+      },
+      "contentType": "Story",
+      "readAt": {
+        "$date": "2026-04-06T06:00:26.221Z"
+      },
+      "_id": {
+        "$oid": "69d34bfa6df5b624a34d5bb0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-06T05:43:20.738Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-06T08:57:24.859Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a436"
+  },
+  "username": "Nguyen Van A",
+  "email": "nguyenvana@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Toi thich viet nhung mau chuyen ngan gan gui va de doc.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "nguyen van a",
+  "searchTokens": [
+    "nguyen",
+    "van",
+    "a"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a460"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a469"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46c"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47e"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a466"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a469"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47e"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.599Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a439"
+  },
+  "username": "Chau Leesin",
+  "email": "chauleesin@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Minh tap trung vao tranh y tuong va bo cuc nhan vat.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "chau leesin",
+  "searchTokens": [
+    "chau",
+    "leesin"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a460"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a469"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46c"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46f"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a466"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a469"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46c"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.613Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a43c"
+  },
+  "username": "Bac thay ngon ngu",
+  "email": "bacthayngonngu@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Viet truyen ngan, suy tu va nhat ky sang tac moi ngay.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "bac thay ngon ngu",
+  "searchTokens": [
+    "bac",
+    "thay",
+    "ngon",
+    "ngu"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a454"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46c"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46f"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a469"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46f"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a43f"
+  },
+  "username": "Ong Hai Bich",
+  "email": "onghaibich@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Thich ke chuyen doi thuong va ghi lai ky uc nho.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "ong hai bich",
+  "searchTokens": [
+    "ong",
+    "hai",
+    "bich"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a454"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a457"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46f"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a454"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a469"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46f"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.625Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a442"
+  },
+  "username": "Linh Tran",
+  "email": "linhtran@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Ve concept art, phac thao nhanh va thu nghiem mau sac.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "linh tran",
+  "searchTokens": [
+    "linh",
+    "tran"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a457"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a45a"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46c"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a478"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a457"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.628Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a445"
+  },
+  "username": "Mai Anh",
+  "email": "maianh@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Yeu thich truyen ngan, tac pham nhe nhang va trong treo.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "mai anh",
+  "searchTokens": [
+    "mai",
+    "anh"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a457"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a45a"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46f"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a478"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47b"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a457"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a45a"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a478"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.634Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a448"
+  },
+  "username": "Quang Minh",
+  "email": "quangminh@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Lam tranh minh hoa, key visual va bai dang tong hop.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "quang minh",
+  "searchTokens": [
+    "quang",
+    "minh"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a45a"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a460"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a46f"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47b"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47e"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a45a"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47b"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.639Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a44b"
+  },
+  "username": "Thien Bao",
+  "email": "thienbao@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Dang truyen dai ky va nhat ky ve nhung ngay lam viec.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "thien bao",
+  "searchTokens": [
+    "thien",
+    "bao"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a45a"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a460"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47b"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47e"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a45a"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a460"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47b"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47e"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.645Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a44e"
+  },
+  "username": "Yen Nhi",
+  "email": "yennhi@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Toi uu phan caption ngan, ro rang va co tam trang.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "yen nhi",
+  "searchTokens": [
+    "yen",
+    "nhi"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a460"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a466"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a472"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47e"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a47e"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.651Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d4d0388b0c39217700a451"
+  },
+  "username": "Duc Huy",
+  "email": "duchuy@gmail.com",
+  "password": "$2b$10$eO9zUibuLyR8dFPjVblf.unJa0hCCpVoCKV6A0VDQQDGjo.sGi9E.",
+  "avatar": null,
+  "bio": "Thich bo anh nhieu tam va bai review phong cach.",
+  "role": "user",
+  "isVerified": true,
+  "searchName": "duc huy",
+  "searchTokens": [
+    "duc",
+    "huy"
+  ],
+  "accountStatus": "active",
+  "permanentBanReason": "",
+  "permanentlyBannedAt": null,
+  "postingRestrictedUntil": null,
+  "postingRestrictionReason": "",
+  "postingRestrictionSource": null,
+  "lastModeratedAt": null,
+  "pendingLoginNoticeType": null,
+  "pendingLoginNoticeTitle": "",
+  "pendingLoginNoticeMessage": "",
+  "likes": [
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a460"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a466"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a469"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a475"
+    }
+  ],
+  "bookmarks": [
+    {
+      "$oid": "69d4d0388b0c39217700a45d"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a463"
+    },
+    {
+      "$oid": "69d4d0388b0c39217700a466"
+    }
+  ],
+  "favoriteTags": [],
+  "readingHistory": [],
+  "createdAt": {
+    "$date": "2026-04-07T09:36:56.659Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T09:47:39.167Z"
+  },
+  "__v": 0
+}]

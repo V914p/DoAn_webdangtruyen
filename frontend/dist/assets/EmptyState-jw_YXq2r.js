@@ -1,0 +1,1 @@
+import{x as e}from"./vendor-core-BEr_bxGL.js";function a({title:t,description:s}){return e.jsxs("div",{className:"panel flex min-h-56 flex-col items-center justify-center gap-3 p-8 text-center",children:[e.jsx("div",{className:"text-lg font-semibold text-white",children:t}),e.jsx("p",{className:"max-w-md text-sm text-slate-400",children:s})]})}export{a as E};

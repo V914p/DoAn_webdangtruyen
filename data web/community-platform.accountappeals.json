@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "69cb843f5a806f4f46412145"
+  },
+  "user": {
+    "$oid": "69cb3b9ace2544a3075038ca"
+  },
+  "banReason": "May dam var ??",
+  "bannedAt": {
+    "$date": "2026-03-31T08:21:03.112Z"
+  },
+  "appealReason": "Tao chi noi su that",
+  "evidence": "Su that ko can chung minh",
+  "status": "approved",
+  "reviewedBy": {
+    "$oid": "69cb573e0b2fe20d07487e8f"
+  },
+  "reviewReason": "Appeal approved. Account access restored.",
+  "reviewedAt": {
+    "$date": "2026-03-31T08:25:10.329Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-31T08:22:23.397Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-31T08:25:10.330Z"
+  },
+  "__v": 0
+}]

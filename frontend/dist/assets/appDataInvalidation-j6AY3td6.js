@@ -1,0 +1,1 @@
+import{C as n,F as a}from"./index-BtVSFG6w.js";function C({includeTagDirectory:t=!1}={}){const E=[a.HOME_FEED,a.TRENDING,a.CONTENT_SEARCH,a.PROFILE,a.TAG_RECOMMENDATIONS];t&&E.push(a.TAG_DIRECTORY),n(E)}function i(){n([a.PROFILE,a.CREATOR_SEARCH,a.TRENDING])}export{i as a,C as i};

@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "69d324f95c24db11cd64af75"
+  },
+  "contentType": "Story",
+  "contentId": {
+    "$oid": "69cd1768be1808ec9561b568"
+  },
+  "__v": 0,
+  "assignedTo": {
+    "$oid": "69cb573e0b2fe20d07487e8f"
+  },
+  "createdAt": {
+    "$date": "2026-04-06T03:14:01.804Z"
+  },
+  "lastUpdatedBy": {
+    "$oid": "69cb573e0b2fe20d07487e8f"
+  },
+  "resolvedNote": "",
+  "snoozedUntil": null,
+  "updatedAt": {
+    "$date": "2026-04-07T06:30:04.781Z"
+  },
+  "workflowNote": "",
+  "workflowStatus": "assigned"
+}]
