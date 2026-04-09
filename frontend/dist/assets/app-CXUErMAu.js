@@ -1,1 +1,0 @@
-const o="The Index",a="Share Your Stories. Showcase Your Art.",s={bookmarked:"bookmarks",liked:"likes"},t=["spam","inappropriate-content","copyright-violation","harassment","other"];export{o as A,t as R,s as S,a};
