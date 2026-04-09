@@ -63,6 +63,13 @@ PORT=5000
 MONGODB_URI=mongodb://localhost:27017/webtruyen
 JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
 JWT_EXPIRES_IN=7d
+
+# SMTP settings (optional) - configure to send real emails
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=giapvu10624@gmail.com
+SMTP_PASS=pqfw fjkf stqg ihtd
+EMAIL_FROM=giapvu10624@gmail.com
 ```
 
 4. Run server
